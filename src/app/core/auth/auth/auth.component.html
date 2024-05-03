@@ -1,0 +1,69 @@
+
+<mat-card class="mat-card-conteiner">
+
+
+  <div class="card-container">
+    <h1 class="mb-3">
+      {{this.questionSelectService.isLoginMode? "giriş yap ":"hesap oluştur" }}
+    </h1>
+
+    <div class="error-message" *ngIf="error">
+      {{ error }}
+    </div>
+
+
+    <form class="example-form" [formGroup]="AuthControlGropups"  (ngSubmit)="handleAuth()">
+
+      <mat-form-field appearance="fill" class="mat-form-field-container">
+        <mat-label>E-posta</mat-label>
+        <input matInput type="email" placeholder="E-posta" required  name="email" formControlName="email">
+<!--        <mat-error>E-posta gerekli</mat-error>-->
+        <mat-error  *ngIf="AuthControlGropups.controls.email.hasError('required')">email alanı doldurunuz</mat-error>
+        <mat-error *ngIf="AuthControlGropups.controls.email.hasError('email')">gecerli bir email giriniz</mat-error>
+      </mat-form-field>
+
+      <mat-form-field appearance="fill" class="mat-form-field-container">
+        <mat-label>Şifre</mat-label>
+        <input matInput type="password" placeholder="Şifre" required  name="password" formControlName="password" >
+        <mat-error *ngIf="AuthControlGropups.controls.password.hasError('required')">password giriniz</mat-error>
+        <mat-error *ngIf="AuthControlGropups.controls.password.hasError('minLength')">password minimum 5 karakter olmalı</mat-error>
+
+      </mat-form-field>
+<!--      //////-->
+      <mat-form-field *ngIf="!this.questionSelectService.isLoginMode"  appearance="fill" class="mat-form-field-container">
+        <mat-label>name</mat-label>
+        <input matInput type="text" placeholder="Şifre" required  name="name" formControlName="name"  >
+        <mat-error *ngIf="AuthControlGropups.controls.name.hasError('required')">adınızı giriniz</mat-error>
+        <mat-error *ngIf="AuthControlGropups.controls.name.hasError('minLength')">adınız  minimum 5 karakter olmalı</mat-error>
+
+      </mat-form-field>
+
+      <mat-form-field *ngIf="!this.questionSelectService.isLoginMode" appearance="fill" class="mat-form-field-container" >
+        <mat-label>Soyisim</mat-label>
+        <input matInput type="text" placeholder="Şifre" required  name="Soyisim" formControlName="sorname"  >
+        <mat-error *ngIf="AuthControlGropups.controls.sorname.hasError('required')">soyadınızı giriniz</mat-error>
+        <mat-error *ngIf="AuthControlGropups.controls.sorname.hasError('minLength')">soyadınız  minimum 5 karakter olmalı</mat-error>
+
+      </mat-form-field >
+      <mat-form-field *ngIf="!this.questionSelectService.isLoginMode"  appearance="fill" class="mat-form-field-container" >
+        <mat-label>number</mat-label>
+        <input matInput type="number" placeholder="Şifre" required  name="Numara" formControlName="number"  >
+        <mat-error *ngIf="AuthControlGropups.controls.number.hasError('required')">numaranızı giriniz</mat-error>
+        <mat-error *ngIf="AuthControlGropups.controls.number.hasError('minLength')">numaranız  minimum 1 karakter olmalı</mat-error>
+
+      </mat-form-field>
+
+      <button mat-raised-button class="buton"   type="submit" 
+              [disabled]="AuthControlGropups.controls.password['status']=='INVALID' || AuthControlGropups.controls.email['status']=='INVALID'" >
+        {{this.questionSelectService.isLoginMode?"Giriş yap":"hesap Oluştur"}}
+      </button>
+
+      <button mat-raised-button  class=" buton butontoggle"  type="button"  
+              (click)="toggle()">{{this.questionSelectService.isLoginMode? "henüz  bir hesabın yok":"zaten bir hesabın var"}}
+      </button>
+
+    </form>
+
+  </div>
+
+</mat-card>

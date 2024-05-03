@@ -1,0 +1,12 @@
+.div-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 350px;
+  height: 300px;
+}
+div{
+  margin: 10px;
+}

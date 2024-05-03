@@ -1,0 +1,41 @@
+.container{
+    display: flex;
+    background-color: #BD9479;
+    min-height: 100vh;
+}
+
+p{
+    width: 75%;
+    margin-left: 12%;
+    margin-top: 2%;
+    color: #FFF;
+text-align: center;
+font-family: Poppins;
+font-weight: 900;
+font-size: 28px;
+line-height: 1.1;
+}
+
+.text .text-p{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+h1{
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-right: 10px;
+    margin-top: 13%;
+}
+.imgs{
+    margin-top: 10%;
+}

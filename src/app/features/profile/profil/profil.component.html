@@ -1,0 +1,114 @@
+<div class="container">
+<form class="example-form">
+    <mat-form-field class="example-full-width">
+      <mat-label>First name</mat-label>
+      <input matInput [(ngModel)]="this.First_name" name="first" >
+    </mat-form-field>
+
+  
+      <mat-form-field class="example-full-width">
+        <mat-label>Last Name</mat-label>
+        <input matInput  [(ngModel)]="Last_Name" name="Last_Name" >
+      </mat-form-field>
+      <mat-form-field class="example-full-width">
+        <mat-label>number</mat-label>
+        <input matInput  [(ngModel)]="number" name="number">
+      </mat-form-field>
+      <mat-form-field class="example-full-width">
+        <mat-label>profession</mat-label>
+        <input matInput  [(ngModel)]="profession" name="profession">
+      </mat-form-field>
+      <mat-form-field class="example-full-width">
+        <mat-label>education level</mat-label>
+        <input matInput  [(ngModel)]="education_level" name="education_level">
+      </mat-form-field>
+      <mat-form-field class="example-full-width">
+        <mat-label>Telephone</mat-label>
+        <span matPrefix>+90 &nbsp;</span>
+        <input type="tel" matInput  [(ngModel)]="Telephone" name="Telephone"><!--placeholder="555-555-1234"   -->
+        <mat-icon matSuffix>mode_edit</mat-icon>
+      </mat-form-field>
+    
+  
+    <p>
+      <mat-form-field class="example-full-width">
+        <mat-label>Address</mat-label><!-- placeholder="Ex. 100 Main St" -->
+        <textarea matInput   [(ngModel)]="Address" name="Address">1600 Amphitheatre Pkwy</textarea>
+      </mat-form-field>
+      <mat-form-field class="example-full-width">
+        <mat-label>Address 2</mat-label>
+        <textarea matInput  [(ngModel)]="Address_2" name="Address_2"></textarea>
+      </mat-form-field>
+    </p>
+  
+    <table class="example-full-width" cellspacing="0">
+      <tr>
+      <td><mat-form-field class="example-full-width">
+        <mat-label>City</mat-label><!-- placeholder="Ex. San Francisco"  -->
+        <input matInput  [(ngModel)]="City" name="City">
+      </mat-form-field></td>
+
+      <td><mat-form-field class="example-full-width">
+        <mat-label>State</mat-label> <!-- placeholder="Ex. California" -->
+        <input matInput   [(ngModel)]="State" name="State">
+      </mat-form-field></td>
+
+      <td><mat-form-field class="example-full-width">
+        <mat-label>Postal Code</mat-label> <!-- placeholder="Ex. 94105" -->
+        <input matInput #postalCode maxlength="5" value="94043"  [(ngModel)]="Postal_Code" name="Postal_Code">
+        <mat-hint align="end">{{postalCode.value.length}} / 5</mat-hint>
+      </mat-form-field></td> 
+    </tr></table>
+
+
+      <mat-form-field class="example-full-width">
+        <!-- <mat-label>education level</mat-label> -->
+        <input matInput   [(ngModel)]="web_sitesi" name="web_sitesi">
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+        <span matPrefix>http://twitter.com/&nbsp;</span><!--placeholder="twitter"   -->
+        <input matInput  [(ngModel)]="twitter" name="twitter">
+      </mat-form-field>
+  
+      <mat-form-field class="example-full-width">
+        <!-- <mat-label>twitter</mat-label> -->
+        <span matPrefix>http://www.facebook.com/&nbsp;</span><!-- placeholder="facebook"  -->
+        <input matInput  [(ngModel)]="facebook" name="facebook">
+      </mat-form-field>
+      <mat-form-field class="example-full-width">
+        <!-- <mat-label>twitter</mat-label> -->
+        <span matPrefix>http://www.linkedin.com/&nbsp;</span> <!--  placeholder="linkedin"  -->
+        <input matInput [(ngModel)]="linkedin" name="linkedin">
+      </mat-form-field>
+      <mat-form-field class="example-full-width">
+        <!-- <mat-label>twitter</mat-label> -->
+        <span matPrefix>http://www.youtube.com/&nbsp;</span> <!-- placeholder="youtube"  -->
+        <input matInput  [(ngModel)]="youtube" name="youtube">
+      </mat-form-field>
+     
+    
+
+  </form>
+  <button mat-raised-button class="recordTable" (click)="recordTable()" style="width: 500px; margin-left: 50px">recordTable</button>
+
+</div>
+
+<!-- <button (click)="initializeComponent()">12</button> -->
+
+<!-- First_name
+Last_Name
+number
+profession
+education_level
+Telephone
+Address
+Address_2
+City
+State
+Postal_ode
+web_sitesi
+twitter
+facebook
+linkedin
+youtube -->

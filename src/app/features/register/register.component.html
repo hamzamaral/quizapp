@@ -1,0 +1,19 @@
+<mat-card class="example-card">
+  <div  class="example-form">
+  <mat-form-field class="example-input">
+    <input matInput placeholder="İsim" [(ngModel)]="isim" required>
+  </mat-form-field>
+
+  <mat-form-field class="example-input">
+    <input matInput placeholder="Soyisim" [(ngModel)]="soyisim" required>
+  </mat-form-field>
+
+  <mat-form-field class="example-input">
+    <input matInput placeholder="Numara" [(ngModel)]="numara" required>
+  </mat-form-field>
+
+      <button mat-raised-button color="primary" type="submit" class="example-button" (click)="submitForm()">Gönder</button>
+
+
+</div>
+</mat-card>

@@ -1,0 +1,79 @@
+
+p{
+  margin: 20px;
+  margin-left: 10px;
+}
+
+/*.example-form-field {*/
+/*  width: 200px;*/
+
+/*  !*padding-bottom: 0px;*!*/
+/*  margin-left: 20px;*/
+/*}*/
+/*.button{*/
+/*  margin-left: 20px;*/
+/*  !*padding: 30px 30px;*!*/
+/*  padding-bottom: 30px;*/
+/*  padding-top: 30px;*/
+/*  padding-left: 30px;*/
+/*  padding-right: 30px ;*/
+/*  margin-bottom: 30px;*/
+
+/*}*/
+
+
+
+/*.card-container{*/
+/*  !*display: flex;*!*/
+/*  !*flex-wrap: wrap;*!*/
+/*  !*width: 50%;*!*/
+/*  !*justify-content: center;*!*/
+/*  align-items: center;*/
+/*  display: flex;*/
+/*  flex-direction: row;*/
+/*  justify-content: center;*/
+/*  width: 60%;*/
+/*  margin: 0 auto;*/
+/*}*/
+
+
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+}
+
+.card-container {
+  /* width: 60%;
+   */
+   width: 910px;
+
+  margin: 0 auto;
+  padding-top: 20px;
+  margin-top: 8%;
+  background-color: rgba(116, 94, 77, 0.35);
+
+
+}
+
+.example-form-field {
+  width: 200px;
+
+  /*padding-bottom: 0px;*/
+  margin-left: 20px;
+}
+.mdc-text-field{
+    background-color: #745E4D;
+
+}
+
+.button{
+  margin-left: 20px;
+  padding: 28px 30px;
+  /*padding-bottom: 30px;*/
+  /*padding-top: 30px;*/
+  /*padding-left: 30px;*/
+  /*padding-right: 30px ;*/
+  /*margin-bottom: 30px;*/
+
+}

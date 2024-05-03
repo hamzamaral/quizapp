@@ -1,0 +1,150 @@
+
+.home-card {
+    max-width: 700px;
+    min-height: 400px;
+    /* font-size: 35px; */
+   
+  }
+  mat-card mat-card-title {
+    /* display: flex;
+    text-align: center; */
+    font-size: 35px;
+    margin-left: 90px;
+  }
+
+  mat-card-content p{
+    /* display: flex;
+    text-align: center; */
+    margin-top: 10px;
+    min-height: 200px;
+    font-size: 35px;
+    line-height: 1.2; /* 1.5, satır aralığını varsayılan font boyutunun 1.5 katı olarak ayarlar */
+
+  }
+  mat-card-content {
+    display: flex;
+    justify-content: center;
+    /* min-height: 200px;
+    font-size: 35px; */
+  }
+
+  .home-card-container{
+
+    position: relative;
+
+   /* text-align: center;  Paragraf içeriğini yatay olarak ortala */
+    /* display: flex; */
+    /* justify-content: center; Paragrafı dikey olarak ortala */
+    /* align-items: center;*/
+    height: 100vh; 
+    background: #BD9479;
+
+  }
+  .home-card-container svg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    /* width: 335px;
+    height: 330px; */
+    flex-shrink: 0;
+  }
+  .navbar-container{
+    position: absolute;
+
+  }
+  .navbar-container{
+    display: flex;
+    width: 100%; 
+    align-items: center;
+
+      }
+
+  .navbar1{
+    margin-top: 5%;
+  }
+  .navbar2{  
+    margin-top: 5%;
+
+    }
+
+
+    .navbar1 > h1 {
+      width: auto 261.893px;
+      height: auto  146px;     
+       color: #FFF;
+  font-family: Inter;
+  font-size: 39px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 10%;
+  margin-left: 10%;
+  padding-left: 10%;
+  padding-right: 10%;
+    }
+
+    .navbar1 > p {
+      width:auto 388.893px;
+      height: auto 78px;    
+      margin-top: 0.1%;
+margin-left: 10%;
+      color: rgba(255, 255, 255, 0.50);
+font-family: Inter;
+font-size: 19.74px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+padding-left: 10%;
+padding-right: 10%;
+}
+.navbar2 > svg {
+  position: absolute;
+  margin-top: 6%;
+  margin-left: 58%;
+}
+
+.buttonn{
+  width:  auto 210.893px;
+  height: auto 60px;
+text-align: center;
+font-family: Inter;
+font-size: 29.405px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: -0.882px;
+border-radius: 19px;
+background-color: #745E4D;
+margin-top: 4%;
+margin-left: 20%;
+
+}
+
+  mat-card  mat-card-actions p {
+    margin-right: 30px; 
+    margin-top: 10px; 
+    font-size: 35px;
+     font-weight: 500;
+  }
+  mat-card  mat-card-actions button {
+    
+    font-size: 35px;
+     font-weight: 400;
+    
+  }
+  mat-card  mat-card-actions {
+
+    margin: 1%;
+
+  }
+ .img{
+  /* background-image: url('data:image/svg+xml;utf8,<svg width="335" height="330" viewBox="0 0 335 330" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M173.339 20.1002C199.838 34.6193 203.475 70.1737 227.285 88.3495C254.548 109.16 300.95 104.147 319.874 131.958C338.613 159.497 340.447 200.308 322.534 228.328C304.226 256.964 259.372 255.549 229.392 273.49C207.74 286.448 194.997 310.016 171.144 318.927C146.124 328.274 116.548 335.207 91.9981 324.817C67.6217 314.501 58.8616 286.832 44.8024 265.456C33.7491 248.651 25.6347 231.303 18.3095 212.784C10.3967 192.779 -0.524199 173.577 0.0195385 152.241C0.63244 128.19 10.3718 105.881 21.5848 84.2561C36.4344 55.6178 45.1917 18.5817 76.0998 5.51489C106.554 -7.36001 144.489 4.2934 173.339 20.1002Z" fill="%23745E4D" fill-opacity="0.15"/></svg>'); */
+
+     width: 522px;
+height: 566px;
+background-color: aliceblue;
+flex-shrink: 0; 
+  }
+  
+

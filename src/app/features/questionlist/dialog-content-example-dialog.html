@@ -1,0 +1,17 @@
+
+<div class="div-container">
+<h1 mat-dialog-title>Soru Sayisi:  {{data.SoruSayisi}}</h1>
+<div mat-dialog-content>
+  <p>çözülen Soru Sayısı :{{data.cozulenSoruSayisi}} </p>
+  <p>boş soru sayısı : {{data.BosSoruSayisi}}</p>
+
+</div>
+
+  <div><p>sınavı bitirmek istediğinden eminmisin</p></div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">No Thanks</button>
+  <button mat-button (click)="finishexam()" [mat-dialog-close]="data.BosSoruSayisi" cdkFocusInitial>Ok</button>
+</div>
+</div>
+
+

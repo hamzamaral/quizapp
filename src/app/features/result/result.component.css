@@ -1,0 +1,26 @@
+table {
+  width: 100%;
+}
+
+.mat-mdc-form-field {
+  font-size: 14px;
+  width: 100%;
+}
+.a-class{
+
+}
+
+.a-class {
+  /*color: blue;*/
+}
+
+.a-class:hover {
+  color: red;
+}
+.result-container{
+  background-color: rgb(192, 170, 153);
+}
+.mat-elevation-z8{
+  margin-top: 10px;
+}
+

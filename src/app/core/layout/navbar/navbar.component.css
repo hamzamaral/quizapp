@@ -1,0 +1,29 @@
+/* .example-spacer {
+  flex: 1 1 auto;
+
+} */
+/* body, html {
+  overflow-x: visible;
+} */
+
+button{
+  color: rgb(255, 255, 255);
+}
+
+.primarytoolbar{
+  background-color: #745E4D;
+    /* display: flex;
+    align-items: center;  
+     justify-content: flex-end; */
+    /* height: 100px; */
+}
+
+.imagesvg{
+  z-index: 1000;
+margin-top: 20px;
+  margin-left: 46%;
+  position: absolute;
+  overflow: visible;
+}
+
+

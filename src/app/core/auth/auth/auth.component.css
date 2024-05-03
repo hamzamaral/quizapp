@@ -1,0 +1,68 @@
+.example-form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+mat-form-field {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+button[type="submit"] {
+  width: 100%;
+  background: rgba(116, 94, 77);
+
+}
+.mat-card-conteiner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(116, 94, 77, 0.35);
+  height: 100vh;
+  /*width;*/
+}
+
+.card-container {
+  width: 500px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  background: rgba(116, 94, 77, 0.35);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.mb-3{
+  margin-left: 35%;
+}
+
+/* .butontwo{
+  background-color: rgba(116, 94, 77);
+
+} */
+
+
+.butontoggle{
+  padding-right: 29%;
+  padding-left: 30%;
+  margin-top: 25px;
+  background-color: rgba(116, 94, 77) !important;
+
+}
+.error-message {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 10px;
+  border: 1px solid #f5c6cb;
+  border-radius: 4px;
+}
+.example-form{
+  background: rgba(116, 94, 77, 0.35);
+}
+
+
+/* ::ng-deep .mat-form-field-container .mat-mdc-text-field-wrapper{
+  background-color: #745E4D;
+} */

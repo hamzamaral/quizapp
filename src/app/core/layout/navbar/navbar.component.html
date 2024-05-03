@@ -1,0 +1,36 @@
+<mat-toolbar class="primarytoolbar">
+  <button class="class1" style="margin-left:10;" routerLink="homepage" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+    <mat-icon >home</mat-icon>
+<!--    routerLink="acomponent"-->
+  </button>
+
+  <button  class="class2" style="margin-left:83%;"  routerLink="Result" (click)="callresultComponentFunction()" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+    <mat-icon>account_circle</mat-icon>
+    <!--    routerLink="acomponent"(click)="callresultComponentFunction()"-->
+  </button>
+
+  <button class="class3"   routerLink="Questionlist"  mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+    <mat-icon>info</mat-icon>
+  </button>
+
+<!--  <span>Quiz</span>-->
+  <!-- <span class="example-spacer"></span> -->
+
+  <button  class="class4"   (click)="isloginmod(login)" routerLink="auth" *ngIf="!isAuthenticated"  mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+    <mat-icon>login  </mat-icon>
+  </button>
+
+    
+  <button  class="class5"   (click)="isloginmod(logout)"  routerLink="auth" *ngIf="!isAuthenticated"  mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+    <mat-icon>person_add_alt</mat-icon>
+  </button>
+
+
+  <button   class="class6" style="margin-left:50px;"   mat-icon-button (click)="logOut()" *ngIf="isAuthenticated" class="example-icon" aria-label="Example icon-button with share icon">
+    <mat-icon>logout</mat-icon>
+  </button>
+
+
+</mat-toolbar>
+
+

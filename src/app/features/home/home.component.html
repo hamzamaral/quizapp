@@ -1,0 +1,35 @@
+<mat-card class="card-container" >
+  <!-- <p> lutfen soru sayısı  catagorisini ve zorlugunu seciniz</p> -->
+
+  <mat-card-content  class="flex-container" >
+    <!--    <p> lutfen soru sayısı  catagorisini ve zorlugunu seciniz</p>-->
+
+    <mat-form-field class="example-form-field">
+      <mat-label>amountt</mat-label>
+      <input matInput type="number" [(ngModel)]="amount" max="32"  min="1" >
+    </mat-form-field>
+
+    <mat-form-field class="example-form-field"   >
+      <mat-label >category</mat-label>
+      <!--      <input matInput [(ngModel)]="category" >style="background-color: #745E4D;"-->
+      <!--      <mat-label>difficulty</mat-label>-->
+      <mat-select [(value)]="categoriesSelected" (selectionChange)="onCategorySelect($event)"  >
+        <mat-option   *ngFor="let food of  categories; let i=index " [value]="food" style="margin: 5px 0px" >
+          {{food}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field class="example-form-field" >
+      <mat-label  >difficulty</mat-label>
+      <mat-select [(value)]="difficultySelected" >
+        <mat-option *ngFor="let food of  difficultyList; let i=index " [value]="food" >
+          {{food}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+    <button mat-raised-button (click)="get()" class="button">List Questions</button>
+    <button mat-raised-button *ngIf="toggle" (click)="finishTheExam()" class="button">finish the exam</button>
+  </mat-card-content>
+
+</mat-card>

@@ -1,0 +1,35 @@
+<div class="container">
+
+  <div class="class1">
+  <mat-card class="example-card">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image" style="background-image: url({{imageUrl}});"></div>
+      <mat-card-title>{{First_name}}  {{Last_Name}}</mat-card-title>
+      <!-- <mat-card-subtitle>Dog Breed</mat-card-subtitle> -->
+    </mat-card-header>
+
+    <mat-card-actions>
+      <button mat-button (click)="showComponent(1)">profile</button>      
+      <button mat-button (click)="showComponent()">account setting</button>
+      <button mat-button (click)="showComponent(2)">fotograf</button> 
+      <button mat-button (click)="showComponent(3)">Notifications</button> 
+      <button mat-button (click)="showComponent(4)">sınav analiz</button> 
+      <button mat-button (click)="showComponent(5)">sonuçlar</button> 
+      <button mat-button (click)="showComponent()">Close Account</button> 
+
+
+    </mat-card-actions>
+  </mat-card>
+ </div>
+
+ <div class="class2">
+  <app-profil *ngIf="selectedComponent == 1"></app-profil>
+  <app-photo *ngIf="selectedComponent == 2"></app-photo>
+  <app-notifications *ngIf="selectedComponent == 3"></app-notifications>
+  <app-examaanalysis *ngIf="selectedComponent == 4"></app-examaanalysis>
+  <app-exam-result *ngIf="selectedComponent == 5"></app-exam-result>
+ </div>
+
+
+</div>
+

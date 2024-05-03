@@ -1,0 +1,86 @@
+<div class="questionlist-component">
+
+ 
+
+  <div class="example-card-container" style="flex-grow: 8">
+    
+  <mat-card  class="example-card"  *ngIf="this.isCardVisible" >
+
+    <mat-card-header>
+      <mat-card-title> SORU {{this.questionNumber +1}} </mat-card-title>
+      <mat-card-title>category </mat-card-title>
+      <mat-card-subtitle> {{this.responseData[this.questionNumber].category}}</mat-card-subtitle>
+    </mat-card-header> 
+  
+
+  
+    <mat-card-content class="mat-card-content-class">
+      <p> {{this.responseData[this.questionNumber].question}}</p>
+    </mat-card-content>
+  
+    <mat-card-actions *ngFor="let option of choosingstring; let j=index">
+      <button mat-button [disabled]="disablechoose[this.questionNumber][j][0]" [ngClass]="{'class1': conditionchoose[this.questionNumber][j][0]}"  (click)="choosing(this.responseData[this.questionNumber].correct_answer,responseDataChoosing[this.questionNumber][j],choosingstring[j],this.questionNumber,this.responseData[this.questionNumber].category,this.responseData[this.questionNumber].type,this.responseData[this.questionNumber].difficulty,j,conditionchoosing[0])" *ngIf="j==0"> {{choosingstring[j]}} ) {{responseDataChoosing[this.questionNumber][j]}}</button>
+      <button mat-button [disabled]="disablechoose[this.questionNumber][j][0]" [ngClass]="{'class1': conditionchoose[this.questionNumber][j][1]}" (click)="choosing(this.responseData[this.questionNumber].correct_answer,responseDataChoosing[this.questionNumber][j],choosingstring[j],this.questionNumber,this.responseData[this.questionNumber].category,this.responseData[this.questionNumber].type,this.responseData[this.questionNumber].difficulty,j,conditionchoosing[1])" *ngIf="j==1"> {{choosingstring[j]}} ) {{responseDataChoosing[this.questionNumber][j]}}</button>
+      <button mat-button  [disabled]="disablechoose[this.questionNumber][j][0]" [ngClass]="{'class1': conditionchoose[this.questionNumber][j][2]}" (click)="choosing(this.responseData[this.questionNumber].correct_answer,responseDataChoosing[this.questionNumber][j],choosingstring[j],this.questionNumber,this.responseData[this.questionNumber].category,this.responseData[this.questionNumber].type,this.responseData[this.questionNumber].difficulty,j,conditionchoosing[2])"  *ngIf="j==2  && responseDataChoosing[this.questionNumber][j] "> {{choosingstring[j]}} ) {{responseDataChoosing[this.questionNumber][j]}}</button>
+      <button mat-button [disabled]="disablechoose[this.questionNumber][j][0]" [ngClass]="{'class1': conditionchoose[this.questionNumber][j][3]}"  (click)="choosing(this.responseData[this.questionNumber].correct_answer,responseDataChoosing[this.questionNumber][j],choosingstring[j],this.questionNumber,this.responseData[this.questionNumber].category,this.responseData[this.questionNumber].type,this.responseData[this.questionNumber].difficulty,j,conditionchoosing[3])"   *ngIf="j==3 && responseDataChoosing[this.questionNumber][j]"> {{choosingstring[j]}} ) {{responseDataChoosing[this.questionNumber][j]}}</button>
+    </mat-card-actions>
+    <!--//ngClass]="{'class1': condition1[i][j][3], 'class2': condition2}"-->
+    <mat-card-footer>
+  
+    </mat-card-footer>
+  
+      
+  
+  </mat-card>
+
+  </div>
+  <div class="div-questionlist-cardd-conteiner" style="flex-grow: 4"  > 
+    <mat-card class="mat-progress-spinner-container" style="background-color:  #745E4D" >
+      <h1>KALAN SÜRE </h1>
+      <p>{{this.minutes }} dakika </p>
+      <p>{{this.seconds}} saniye </p>
+
+      <mat-progress-spinner 
+
+      class="example-margin"
+      [color]= "color"
+      [mode]="mode"
+      [value]="value">
+      </mat-progress-spinner>
+
+    </mat-card>
+   
+    <mat-card  class="div-questionlist-cardd"  >
+
+    
+      <mat-card-actions class="div-questionlist-actions"  >
+        <div class="button-container">
+        <button mat-button  *ngFor="let index of this.responseData; let i=index" 
+        (click)="questionlist(i)" 
+        [ngClass]="{'selected-button': selectedButtons[i]}"
+        > {{i+1}} </button>
+        <!--              [ngClass]="{'selected-button': i == selectedButtonIndex}"
+ -->
+
+      </div>
+
+       <div class="mat-button-container"  >
+      
+      <button mat-button 
+        (click)="questionlistprevious()" > previous </button>
+        <!-- Finish -->
+        <button mat-button  
+        (click)="questionlistnext()" > next </button>
+
+        <button mat-button  
+        (click)="Finish()" > Finish </button>
+      </div>
+
+      </mat-card-actions>
+    </mat-card>
+
+  </div>
+
+  
+
+</div>

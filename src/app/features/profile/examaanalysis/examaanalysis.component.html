@@ -1,0 +1,5 @@
+<mat-form-field>
+    <mat-label>Dosya Seç</mat-label>
+    <input type="file" (change)="dosyaSec($event)" #dosyaInput style="display: none">
+    <button mat-stroked-button color="primary" (click)="dosyaInput.click()">Dosya Seç</button>
+  </mat-form-field>

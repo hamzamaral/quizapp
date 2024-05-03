@@ -1,0 +1,14 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+app-footer {
+  margin-top: auto;
+}
+body, html {
+  overflow: visible;
+  width: 100%; /* Konteynerin genişliği tam ekran */
+
+}

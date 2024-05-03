@@ -1,0 +1,28 @@
+.example-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.example-input {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.example-card {
+  max-width: 480px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.example-button{
+  width:300px;
+  height:50px;
+}
+
+

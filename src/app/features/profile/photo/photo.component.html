@@ -1,0 +1,27 @@
+<div class="container">
+
+    <div class="container-imageUrl">
+      <!-- ngif="imgeurl" --> 
+        <img [src]="imageUrl" alt="Uploaded Image" class="imageUrl">
+    
+    </div>
+
+    <div class="container-onFileSelected" >
+        <!-- <mat-label>Last Name</mat-label> -->
+        <!-- <input matInput value="{{this.imagename}}"> -->
+        <div class="inputfile" >
+        <input type="file"  (change)="onFileSelected($event)" ></div>
+        <!-- <button type="file" mat-button (click)="onFileSelected($event)">Basic</button> -->
+
+      <div class="kayıt-et">
+            <button mat-raised-button  class="kayıt-etbutton"  (click)="record()"  >record</button>
+          </div>
+    </div>
+
+   
+    
+  <!-- <div *ngIf="imageUrl">
+    <img [src]="imageUrl" alt="Uploaded Image">
+  </div> -->
+
+</div>
